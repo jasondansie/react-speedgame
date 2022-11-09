@@ -7,12 +7,16 @@ import Modal from './Modal';
 
 class App extends Component {
   state = {
-    score: "25",
-    misses: "3",
+    score: 0,
+    misses: 3,
     isRunning: false,
     showModal: false,
     modalText:"",
   };
+
+  circleHandler = (props) =>{
+    console.log("circle clicked");
+  }
 
   changeGameState = (props) => {
     if (this.state.isRunning) {
@@ -31,7 +35,7 @@ class App extends Component {
 
   loadModal = () => {
     let string = ``;
-    if (this.state.score == 0) {
+    if (this.state.score === 0) {
       string = "Try again.";
     }
     else if(this.state.score < 6){
@@ -72,19 +76,19 @@ closeModal = () => {
             <div className='circles'>
               <Cirlce 
                 circle_id={"1"}
-                circleClick={this.changeGameState}
+                circleClick={this.circleHandler}
               />
               <Cirlce 
                 circle_id={"2"}
-                circleClick={this.changeGameState}
+                circleClick={this.circleHandler}
               />
               <Cirlce 
                 circle_id={"3"}
-                circleClick={this.changeGameState}
+                circleClick={this.circleHandler}
               />
               <Cirlce 
                 circle_id={"4"}
-                circleClick={this.changeGameState}
+                circleClick={this.circleHandler}
               />
              
             </div>
