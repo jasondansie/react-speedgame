@@ -1,0 +1,41 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(60, 57, 57, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .modal {
+    position: relative;
+    top: 30vh;
+    left: 20vw;
+    background-image: linear-gradient(aqua, lightgreen);
+    min-height: 40vh;
+    max-width: 60vw;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 0 5px rgb(111, 111, 111);
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.overlay h2 {
+    margin-bottom: 20px;
+}
+
+.btnClose {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
