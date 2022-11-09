@@ -24,9 +24,6 @@ class App extends Component {
     }
   }
 
-  setTimer = () => {
-    timer = setTimeout(activateCircle, interval)     
-}
 
   render() {
     return (
