@@ -7,8 +7,7 @@
 }
 body {
   font-family: "Bungee Spice", sans-serif;
-  
+    background-color: lightgreen;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

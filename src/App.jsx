@@ -8,27 +8,6 @@ class App extends Component {
     misses: "3",
   };
 
-  changeHandler = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  submitHandler = (event) => {
-    event.preventDefault();
-    this.setState({
-      showPopup: true
-    });
-  };
-
-  closePopupHandler = (event) => {
-    event.preventDefault();
-    this.setState({
-      showPopup: false
-    });
-    console.log("cancle");
-  };
-
   render() {
     return (
       <main>
@@ -36,6 +15,12 @@ class App extends Component {
           score={this.state.score}
           misses={this.state.misses}
         />
+        <div className='game_area'>
+          <section>
+            <div class="barn"></div>
+            <div className='circles'></div>
+          </section>
+        </div>
       </main>
     );
   }
