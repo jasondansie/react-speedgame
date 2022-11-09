@@ -2,6 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import Header from './Header';
 import Button from './Button';
+import Cirlce from './Circle';
 
 class App extends Component {
   state = {
@@ -11,7 +12,6 @@ class App extends Component {
   };
 
   changeGameState = (props) => {
-    console.log("it works!!");
     if (this.state.isRunning) {
       this.setState({
         isRunning: false
@@ -22,8 +22,11 @@ class App extends Component {
         isRunning: true
       });
     }
-
   }
+
+  setTimer = () => {
+    timer = setTimeout(activateCircle, interval)     
+}
 
   render() {
     return (
@@ -36,7 +39,23 @@ class App extends Component {
           <section>
             <div className="barn"></div>
             <div className='circles'>
-
+              <Cirlce 
+                circle_id={"1"}
+                circleClick={this.changeGameState}
+              />
+              <Cirlce 
+                circle_id={"2"}
+                circleClick={this.changeGameState}
+              />
+              <Cirlce 
+                circle_id={"3"}
+                circleClick={this.changeGameState}
+              />
+              <Cirlce 
+                circle_id={"4"}
+                circleClick={this.changeGameState}
+              />
+             
             </div>
             {this.state.isRunning 
               ? <Button 
