@@ -1,5 +1,5 @@
 Catch the Cow
-made a simple speed game where you catch the cow to earn points. 
+made a simple speed game where you catch the cow to earn points. The game ends when you run out of misses.
 
 Technologies used
 Built with:
@@ -12,14 +12,15 @@ Reactjs
 press start button to play the game. press stop to stop the game at any time. Game ends when you miss 3 times.
 
 Live page here
+[Catch the Cow](https://tangerine-arithmetic-8e671a.netlify.app)
 
 Screenshot
+![Catch the Cow](./src/images/Screen%20Shot%202022-11-16%20at%2009.49.52.png)
 
 Sources
-GitHub Guides - masterin markdown
-Make a README
-Authors and acknowledgment
-Margit Tennosaar
 
-GitHub @margittennosaar
+Authors and acknowledgment
+Jason Dansie
+
+GitHub @jasondansie
 LinkedIn
