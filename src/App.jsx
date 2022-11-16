@@ -24,10 +24,10 @@ class App extends Component {
     circles: [1, 2, 3, 4],
     current: -1,
     pace: 1000,
+    count: 0,
   };
 
   timer;
-
 
   playCowSound = () => {
     if (cowSound.paused) {
@@ -54,9 +54,13 @@ class App extends Component {
           return;
         }
       }
-      this.setState({
-        score: this.state.score + 1,
-      });
+
+      if (this.state.count <= 1) {
+        this.setState({
+          score: this.state.score + 1,
+          count: this.state.count + 2,
+        });
+      }
     }
   }
 
@@ -74,6 +78,7 @@ class App extends Component {
     this.setState({
       current: nextActive,
       pace: this.state.pace * 95,
+      count: 0,
 
     });
 
@@ -83,7 +88,9 @@ class App extends Component {
   startHandler = () => {
     startSound.play();
     hillbillSound.play();
+
     this.nextCircle();
+
     this.setState({
       isRunning: true
     })
@@ -92,15 +99,17 @@ class App extends Component {
   stopHandler = () => {
     endSound.play();
     hillbillSound.pause();
-    console.log("Stopped");
+
     clearTimeout(this.timer);
     this.loadModal();
+
     this.setState({
       isRunning: false,
       current: -1,
       showModal: true,
       misses: 3,
       score: 0,
+      count: 0,
     })
   }
 
