@@ -42,7 +42,7 @@ class App extends Component {
   }
 
   circleHandler = (i) => {
-    if (this.state.isRunning == true) {
+    if (this.state.isRunning === true) {
       cowSound.play();
 
       if (this.state.current !== i) {
