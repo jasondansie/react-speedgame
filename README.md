@@ -15,7 +15,7 @@ Live page here
 [Catch the Cow](https://tangerine-arithmetic-8e671a.netlify.app)
 
 Screenshot
-![Catch the Cow](./src/images/Screen%20Shot%202022-11-16%20at%2009.49.52.png)
+![Catch the Cow](./src/images/screenshot.png)
 
 Sources
 
