@@ -11,8 +11,8 @@ Reactjs
 ...
 press start button to play the game. press stop to stop the game at any time. Game ends when you miss 3 times.
 
-Live page here
-[Catch the Cow](https://tangerine-arithmetic-8e671a.netlify.app)
+# Live page here
+![Catch the Cow](https://tangerine-arithmetic-8e671a.netlify.app)
 
 Screenshot
 ![Catch the Cow](./src/images/screenshot.png)
